@@ -1,0 +1,561 @@
+@import url( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+* {
+    color: white;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(65, 41, 110) 52%, rgb(9, 3, 56) 100%);
+}
+
+/* header background coloring*/
+header {
+    border-bottom: 5px solid white;
+}
+
+ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    /* padding: 20px 60px 20px 20px; */
+}
+
+.nav-btns {
+    display: flex;
+    gap: 40px;
+    padding-right: 10px;
+}
+
+.nav-btns a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-btns a li {
+    padding: 10px 30px 10px 30px;
+    font-size: 1.8em;
+}
+
+.nav-btns a :hover {
+    background-color: rgb(16, 2, 31);
+}
+
+.logo-img img {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+    zoom: 1.5;
+    padding: 0;
+}
+
+.about-art {
+    margin: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ---- User Icon ---- */
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 6.6em;
+}  
+
+.user a {
+    text-decoration: none;
+    color: #777;
+}
+
+.user-icon a.icn {
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #777;
+} 
+
+.user-icon{
+    list-style: none inside;
+}
+
+.user-icon a:hover {
+    color: rgb(16, 2, 31);
+}
+
+.user ul ul {
+    display: none;
+}
+
+.user-icon li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    z-index: 10;
+    list-style: none inside;
+    background-color: #ddd;
+    padding: 0.5em;
+    width: 15em;
+    right: 0.5em;
+}
+
+.user-icon ul a {
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.5em;
+} 
+
+/* welcome title */
+.welcome-msg h1 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin: 0%;
+    padding: 4rem;
+}
+
+.act {
+    display: flex;
+    margin: 2em;
+    gap: 50px;
+}
+
+.act .act-text {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.act .act-text a,
+.join-btn a {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #8707ff;
+    background: rgb(16, 2, 31);
+    border: 2px solid #8707ff;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.act-text a:hover,
+.join-btn a:hover,
+.join-club-btn a:hover{
+    color: #ffffff;
+    background: rgb(16, 2, 31);
+    border: 2px solid #8707ff;
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.join-btn {
+    margin: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.join-club-btn {
+    margin: 2em;
+    font-size: 4em;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-club-btn a {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #8707ff;
+    background: rgb(16, 2, 31);
+    border: 2px solid #8707ff;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    text-decoration: none;
+}
+
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.activities-art{
+    width: 80em;
+    text-align: center;
+}
+
+/* Contact page -----------------> */
+
+.contact-page {
+    background-color: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(65, 41, 110) 52%, rgb(9, 3, 56) 100%);
+}
+
+.contact-form {
+    width: 40em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 5px solid;
+    border-radius: 15%;
+    background: rgb(16, 2, 31);
+    box-shadow: -13px 9px 157px 31px rgba(135, 7, 255, 0.39);
+    -webkit-box-shadow: -13px 9px 157px 31px rgba(135, 7, 255, 0.39);
+    -moz-box-shadow: -13px 9px 157px 31px rgba(135, 7, 255, 0.39);
+    border: #8707ff 2px solid;
+}
+
+.contact-form-article {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+.contact-form h2 {
+    color: #e7d5fc;
+    text-align: center;
+    font-size: 3em;
+    margin: 0.7em;
+}
+
+.contact-form label {
+    color: #e7d5fc;
+    font-size: 1.2em;
+}
+
+.contact-form-article button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #8707ff;
+    background: rgb(16, 2, 31);
+    border: 2px solid #8707ff;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 40%;
+}
+
+.contact-inputs,
+textarea {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 30em;
+    width: 25em;
+    text-align: center;
+}
+
+.contact-inputs:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+textarea:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.contact-inputs textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid rgb(65, 41, 110);
+}
+
+.contact-inputs::placeholder {
+    text-align: center;
+
+    color: #5c5a5a;
+}
+
+
+/* upload file css>>>>>>> */
+.custum-file-upload {
+    height: 5em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #8707ff;
+    background-color: #09011a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px #8707ff;
+    margin-top: 2em;
+}
+
+.custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+    height: 80px;
+    fill: #e8e8e8;
+}
+
+.custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custum-file-upload .text span {
+    font-weight: 400;
+    color: #e8e8e8;
+}
+
+.custum-file-upload input {
+    display: none;
+}
+
+.upload-btn {
+    align-self: center;
+
+}
+
+
+/* Team page -----------------> */
+
+
+.team-main {
+    min-height: 75px;
+    max-width: 1380px;
+    margin: 60px auto 60px auto;
+    padding: 0px 30px 0px 30px;
+}
+
+.team-main h3,
+h2 {
+    margin: 0px;
+    line-height: 25px;
+}
+
+.div-main {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto 0px auto;
+    justify-content: space-evenly;
+}
+
+.width-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.team-main h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    margin: 0px 0px 50px;
+}
+
+.team-card {
+    text-align: center;
+    box-shadow: rgb(65, 41, 110) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px 15px 25px;
+    width: 280px;
+    margin: 0px 10px 25px 10px;
+    border: 2px solid white;
+}
+
+.team {
+    margin: 20px 0px 5px 0px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.team-card p {
+    margin-top: 0px 0px 20px;
+    color: rgb(122, 122, 122);
+    line-height: 30px;
+}
+
+.image-div {
+    clip-path: circle(50% at 50% 50%);
+    width: 130px;
+    height: 130px;
+}
+
+.image-div img {
+    max-width: 100%;
+
+}
+
+/* Footer */
+
+.site-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid white;
+}
+
+.footer-btns {
+    padding: 0 0 0 0;
+}
+
+.footer-btns a,
+h2 {
+    text-decoration: none;
+    padding: 5px 2px 2px 2px;
+    margin-top: 5px;
+}
+
+.footer-btns p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-contacts h2,
+h4,
+p {
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.copy-right-sec {
+    text-align: center;
+    background-color: #09011a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.logo-img img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Event page ----------------> */
+
+.event-heading h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+.event-cards{
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+    margin: 4em;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+    background-size: 200% 200%;
+    border-radius: 12px;
+}
+
+.card-int {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: rgb(17, 3, 39);
+}
+
+.img img {
+    width: 100%;
+    height: 175px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-data {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.card__span {
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+    background-size: 200% 200%;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+.card:hover,
+button:hover {
+    animation: gradient 0.8s ease-in 1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 200% 200%;
+    }
+
+    100% {
+        background-position: 400% 400%;
+    }
+}
